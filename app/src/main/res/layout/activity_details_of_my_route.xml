@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.silent.fiveghost.guide.ui.activitys.DetailsOfMyRouteActivity">
+
+    <include
+        android:id="@+id/details_of_mu_route_top"
+        layout="@layout/toolbar" />
+    <View
+        android:layout_above="@id/details_of_mu_route_btm"
+        android:background="#d4d4d4"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        />
+    <LinearLayout
+        android:id="@+id/details_of_mu_route_btm"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <TextView
+            android:layout_marginRight="105px"
+            android:gravity="center"
+            android:textColor="#ff8005"
+            android:background="@drawable/shape_route_yello"
+            android:text="删除"
+            android:layout_width="120px"
+            android:layout_height="60px" />
+        <TextView
+            android:id="@+id/details_of_my_route_bianji"
+            android:gravity="center"
+            android:textColor="#ff8005"
+            android:background="@drawable/shape_route_yello"
+            android:text="编辑"
+            android:layout_width="120px"
+            android:layout_height="60px" />
+        <TextView
+            android:id="@+id/details_of_mu_route_fabu"
+            android:layout_marginLeft="105px"
+            android:gravity="center"
+            android:textColor="#ff8005"
+            android:background="@drawable/shape_route_yello"
+            android:text="使用"
+            android:layout_width="120px"
+            android:layout_height="60px" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_above="@id/details_of_mu_route_btm"
+        android:layout_below="@id/details_of_mu_route_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.recker.flybanner.FlyBanner
+                android:id="@+id/details_of_mu_route_banner"
+                android:layout_width="match_parent"
+                android:layout_height="332px"></com.recker.flybanner.FlyBanner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="35px"
+                android:text="路线名称：北京三日游" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="26px"
+                android:text="游玩天数：20天" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_marginTop="36px"
+                android:background="#eaebed" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+
+                <View
+                    android:layout_width="10px"
+                    android:layout_height="40px"
+                    android:layout_marginLeft="42px"
+                    android:layout_marginTop="31px"
+                    android:background="#505050" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="33px"
+                    android:text="路线描述" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#d4d4d4" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33px"
+                android:layout_marginRight="49px"
+                android:layout_marginTop="38px"
+                android:text="丽江·City Walk一一大研古城
+丽江的传说不止艳遇，你是否听过那纸寿千年的传说？
+茶马古道的马队已经离开上千年了，走在悠悠的青石板上，似乎传来久远的布农铃声，“叮叮当当”的响彻着整个祥云坝子……
+走进丽江古城，在鳞次栉比的瓦顶下蜿蜒前行去触摸这座城市的灵魂
+扎染一块方巾、临摹东巴文字，于方寸之间打开一幅幅承载着千年古老传说的画卷。
+店铺老板诉说你所不知的纳西文化，古镇情怀和艳遇绯闻...
+跟着我们，一起去寻找文青丽漂真正痴迷的丽江...
+帖子欣赏古城浮生，走街串巷\n第1天 丽江
+丽江最值得细逛的就是古城中一家家有故事的店铺了，有的深藏于大街小巷中，有的隐身于市井街头，别看店铺不大，但却十分有料；
+你可以挑一个悦耳的布农铃，买一个特色的东巴手札，选一条民族风的扎染花裙，带走承载属于你记忆的丽江手信，撑起一把结着丁香芬芳的油纸伞。
+【布农铃】每一位到过丽江的朋友，应该对布农铃不会感到陌生。位于四方街大石桥头的布农铃小店，不仅在丽江古城只此一家，在全国也别无分店；就是在全世界也只有四家：除了丽江，就是尼泊尔的加德满都、印度的加尔各答和希腊的雅典各有一个分店了。
+【六福伞铺】这里的油纸伞制作技艺可以上溯到至少明代，已经传承了几百年，也是国家非物质文化遗产的传承者。曾受邀参加过天天向上的录制。
+【四方街】在这里我们将欣赏到一场最原滋原味原始的纳西族东巴文化表演。
+【丽江第一观景台】黄昏的丽江古城 — 遥望玉龙琼山峻，遍布名胜醉晚风；日落时的丽江古城 — 彩云照西南，明月佳人眼；夜晚的丽江古城 — 故道茶马远，豪饮醉不还。
+集结日：游侠客会提前1天下午18点发送出团短信。领队会在前一天联系大家，请保持手机畅通！
+解散日：约下午20:30解散" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_marginTop="36px"
+                android:background="#eaebed" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+
+                <View
+                    android:layout_width="10px"
+                    android:layout_height="40px"
+                    android:layout_marginLeft="42px"
+                    android:layout_marginTop="31px"
+                    android:background="#505050" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="33px"
+                    android:text="报名须知" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#d4d4d4" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33px"
+                android:layout_marginRight="49px"
+                android:layout_marginTop="38px"
+                android:text="【活动性质】当地玩乐、精品小团
+【活动领队】游侠客特别安排熟悉本土传统文化并且爱玩会玩爱交朋友的领队
+【适合人群】喜欢文化、喜欢历史、喜欢慢行的文青
+【游走方式】步行
+【集合时间】下午15:00-15:20
+【集合地点】超级秘密，静等通知（游侠客旗帜）
+【适合人群】10-70周岁身体健康的深度游爱好者
+【成行人数】缴费4人成行，提前一天18点前报名均可通过网站参加活动，18点后报名拨打咨询：18088935200。如报名4人及以上，可联系客服增加批次。" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_marginTop="36px"
+                android:background="#eaebed" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+
+                <View
+                    android:layout_width="10px"
+                    android:layout_height="40px"
+                    android:layout_marginLeft="42px"
+                    android:layout_marginTop="31px"
+                    android:background="#505050" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="33px"
+                    android:text="温馨提示" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#d4d4d4" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33px"
+                android:layout_marginRight="49px"
+                android:layout_marginTop="38px"
+                android:text="费用包含
+带队：全程资深领队中文讲解；
+保险：旅游意外险；
+其他：活动组织成本；
+费用不含其他一切个人消费" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_marginTop="36px"
+                android:background="#eaebed" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+
+                <View
+                    android:layout_width="10px"
+                    android:layout_height="40px"
+                    android:layout_marginLeft="42px"
+                    android:layout_marginTop="31px"
+                    android:background="#505050" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="33px"
+                    android:text="主意事项" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#d4d4d4" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="33px"
+                android:layout_marginLeft="33px"
+                android:layout_marginRight="49px"
+                android:layout_marginTop="38px"
+                android:text="【建议装备及注意事项】
+1，一双好的运动鞋或者徒步鞋。如果天气预报显示有雨，带上一把雨伞。
+2，中途退出请和领队打招呼。
+3，活动当中如有问题要听从领队的安排和计划。" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </ScrollView>
+
+</com.zhy.autolayout.AutoRelativeLayout>

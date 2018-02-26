@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="102px">
+        <TextView
+            android:id="@+id/tv_xitongtongzhi"
+            android:layout_centerInParent="true"
+            android:text="聊天"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+        <ImageView
+
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="102px">
+            <TextView
+                android:id="@+id/tv_yiqiangdantongzhi"
+                android:layout_centerInParent="true"
+                android:text="聊天"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView
+
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="102px">
+            <TextView
+                android:id="@+id/tv_yuyuedingdantongzhi"
+                android:layout_centerInParent="true"
+                android:text="聊天"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView
+
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+</RelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

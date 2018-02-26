@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.silent.fiveghost.guide.ui.activitys.CellPhoneNumberActivity">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:background="@color/toolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/toolbar"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="70px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <ImageView
+            android:layout_marginLeft="45px"
+            android:src="@mipmap/shoujihao2x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginLeft="30px"
+        android:hint="请输入新手机号"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+        <View
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@color/fengexian"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <ImageView
+            android:layout_marginLeft="45px"
+            android:src="@mipmap/yanzhenma2x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="30px"
+            android:hint="请输入验证码"
+            android:background="#fff"
+            android:layout_width="430px"
+            android:layout_height="100px" />
+        <View
+            android:background="#d3d3d3"
+            android:layout_width="1px"
+            android:layout_height="25px"/>
+        <TextView
+            android:layout_marginLeft="35px"
+            android:textColor="#efe538"
+            android:text="获取验证码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+   <LinearLayout
+       android:layout_marginTop="135px"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <Button
+           android:text="确认"
+           android:textColor="#fff"
+           android:background="#00c899"
+           android:layout_width="650px"
+           android:layout_height="80px" />
+   </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.silent.fiveghost.guide.ui.activitys.InwardWalkingActivity">
+
+        <View
+            android:id="@+id/mLinear_Footer"
+            android:layout_alignParentBottom="true"
+            android:background="#000"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="60px" />
+
+        <RadioGroup
+            android:paddingTop="5px"
+            android:background="#0000"
+            android:clipChildren="false"
+            android:gravity="bottom"
+            android:layout_above="@id/mLinear_Footer"
+            android:id="@+id/mRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:paddingBottom="10px"
+            android:orientation="horizontal">
+            <RadioButton
+                android:checked="true"
+                android:textColor="@drawable/select_check"
+                android:id="@+id/mRadio_home"
+                android:layout_width="0dp"
+                android:drawableTop="@drawable/select_homepage"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center_horizontal"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/mRadio_route"
+                android:layout_weight="1"
+                android:textColor="@drawable/select_check"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/select_route"
+                android:text="线路" />
+
+
+            <RadioButton
+                android:background="#0000"
+                android:id="@+id/mRadio_GrabaSingle"
+                android:layout_width="0dp"
+                android:layout_height="240px"
+                android:textColor="@drawable/select_check"
+                android:gravity="center_horizontal|bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="抢单" />
+            <RadioButton
+                android:drawableTop="@drawable/select_order"
+                android:id="@+id/mRadio_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@drawable/select_check"
+                android:gravity="center_horizontal|bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="订单" />
+
+            <RadioButton
+                android:drawableTop="@drawable/select_persional"
+                android:id="@+id/mRadio_persional"
+                android:layout_width="0dp"
+                android:textColor="@drawable/select_check"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="我的" />
+        </RadioGroup>
+
+        <include
+            android:id="@+id/mRouteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:background="#34393f"
+            layout="@layout/toolbar"
+            />
+
+    <android.support.v4.view.ViewPager
+        android:layout_above="@id/mRadioGroup"
+        android:layout_below="@id/mRouteTitle"
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/center_iamge"
+        android:layout_marginBottom="50px"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/mLinear_Footer"
+        android:src="@mipmap/a_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="124px"
+    android:layout_height="124px">
+    <ImageView
+        android:id="@+id/mImageView"
+        android:layout_centerInParent="true"
+        android:layout_width="124px"
+        android:layout_height="124px" />
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/mImageView_Jian"
+        android:src="@mipmap/jian"
+        android:layout_width="30px"
+        android:layout_height="30px" />
+</com.zhy.autolayout.AutoRelativeLayout>

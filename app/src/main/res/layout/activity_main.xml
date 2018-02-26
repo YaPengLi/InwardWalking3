@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activitys.LoginActivity">
+
+    <ImageView
+        android:id="@+id/Image_Logo"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/flag1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Image_Logo"
+        android:layout_marginTop="80px"
+        android:gravity="center"
+        android:text="与您一起同行,留一段美好回忆"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/flag2"
+        android:layout_width="36px"
+        android:layout_height="36px"
+        android:layout_below="@id/flag1"
+        android:layout_marginLeft="79px"
+        android:layout_marginTop="220px"
+        android:src="@mipmap/user2x" />
+
+    <ImageView
+        android:layout_below="@id/flag2"
+        android:layout_width="36px"
+        android:layout_height="36px"
+        android:layout_marginLeft="79px"
+        android:layout_marginTop="90px"
+        android:src="@mipmap/account2x" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/mLogin_user"
+        android:layout_width="650px"
+        android:layout_height="80px"
+        android:maxLines="1"
+        android:layout_below="@id/flag1"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200px"
+        android:background="@color/login_user"
+        android:hint="@string/login_user"
+        android:paddingLeft="90px" />
+
+    <EditText
+        android:password="true"
+        android:maxLines="1"
+        android:id="@+id/mLogin_pwd"
+        android:textColor="#fff"
+        android:layout_width="650px"
+        android:layout_height="80px"
+        android:layout_below="@id/mLogin_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45px"
+        android:background="@color/login_user"
+        android:hint="@string/login_password"
+        android:paddingLeft="90px" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/mLog"
+        android:layout_width="650px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mLogin_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px">
+
+        <Button
+            android:id="@+id/mLogin_login"
+            android:layout_width="300px"
+            android:layout_height="80px"
+            android:background="@color/login_btn"
+            android:text="@string/btn_login" />
+
+        <Button
+            android:id="@+id/mLogin_Register"
+            android:layout_width="300px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:background="@color/login_user"
+            android:text="@string/btn_register" />
+
+        <TextView
+            android:id="@+id/mLogin_find_pdw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/mLogin_Register"
+            android:layout_marginTop="43px"
+            android:text="@string/btn_forget_the_password" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

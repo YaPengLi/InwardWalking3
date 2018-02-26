@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.activitys.MyRouteActivity">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:background="#34393f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/toolbar"/>
+        <ImageView
+            android:id="@+id/route_add"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70px"
+            android:layout_marginRight="35px"
+            android:src="@mipmap/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</com.zhy.autolayout.AutoLinearLayout>

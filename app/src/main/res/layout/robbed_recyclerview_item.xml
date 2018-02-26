@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mGrabaView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30px"
+    android:layout_marginRight="30px">
+    <android.support.v7.widget.CardView
+        android:layout_marginBottom="20px"
+        android:id="@+id/mRobbedImage_CardView"
+        android:layout_marginTop="20px"
+        android:layout_width="210px"
+        android:layout_height="210px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/mRobbed_Images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+         />
+    </android.support.v7.widget.CardView>
+    <ImageView
+        android:id="@+id/mRobbedImageView"
+        android:layout_width="210px"
+        android:layout_height="210px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/mRobbedTextCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="20px"
+        android:layout_toEndOf="@+id/mRobbedImage_CardView"
+        android:layout_toRightOf="@+id/mRobbedImage_CardView"
+        android:text="城市：丽江" />
+
+    <TextView
+        android:id="@+id/mRobbedTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mRobbedTextCityName"
+        android:layout_alignStart="@+id/mRobbedTextCityName"
+        android:layout_below="@+id/mRobbedTextCityName"
+        android:text="时间：2018.01" />
+
+    <TextView
+        android:id="@+id/mRobbedTextNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mRobbedTextTime"
+        android:layout_alignStart="@+id/mRobbedTextTime"
+        android:layout_below="@+id/mRobbedTextTime"
+        android:text="人数：4人" />
+
+    <TextView
+        android:id="@+id/mRobbedTextTouist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mRobbedTextNum"
+        android:layout_alignStart="@+id/mRobbedTextNum"
+        android:layout_below="@+id/mRobbedTextNum"
+        android:text="旅游偏好：自然风景" />
+
+    <TextView
+        android:id="@+id/mRobbedTextOrderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mRobbedTextTouist"
+        android:layout_alignStart="@+id/mRobbedTextTouist"
+        android:layout_below="@+id/mRobbedTextTouist"
+        android:text="订单类型：一站式" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/mRobbedRelative"
+        android:layout_width="85px"
+        android:layout_height="85px"
+        android:layout_alignBaseline="@+id/mRobbedTextTime"
+        android:layout_alignBottom="@+id/mRobbedTextTime"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:textSize="28px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="30:00"
+            android:textColor="#000" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <include
+        android:layout_below="@id/mRobbedImage_CardView"
+        android:layout_centerHorizontal="true"
+        layout="@layout/bottom"
+        android:layout_height="1px"
+        android:layout_width="match_parent" />
+</com.zhy.autolayout.AutoRelativeLayout>

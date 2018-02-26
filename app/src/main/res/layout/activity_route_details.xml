@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".ui.activitys.RouteDetailsActivity">
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+               <View
+                   android:background="#34393f"
+                   android:layout_width="match_parent"
+                   android:layout_height="128px" />
+               <include
+                   android:id="@+id/mtoolbar"
+                   layout="@layout/toolbar"/>
+       </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+                <com.silent.fiveghost.guide.ui.fragments.order.parallaxheader.HeadZoomScrollView
+                    android:id="@+id/mRoute_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#3b3b3b"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/mRotedetails_iamge"
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/big_two" />
+
+                                <com.zhy.autolayout.AutoRelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:background="@drawable/relative_shape_four"
+                                    android:layout_height="match_parent">
+                                        <com.zhy.autolayout.AutoRelativeLayout
+                                            android:layout_marginBottom="45px"
+                                            android:id="@+id/flag11"
+                                            android:background="@drawable/relative_shape_four"
+                                            android:paddingRight="30px"
+                                            android:paddingLeft="30px"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                                <TextView
+                                                    android:layout_marginTop="35px"
+                                                    android:id="@+id/ddbh"
+                                                    android:text="订单编号：201704052365"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" />
+                                                <TextView
+                                                    android:layout_marginTop="20px"
+
+                                                    android:id="@+id/ykxm"
+                                                    android:layout_below="@id/ddbh"
+                                                    android:text="游客姓名：王小花"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" />
+                                                <TextView
+                                                    android:id="@+id/yknld"
+                                                    android:layout_marginTop="20px"
+
+                                                    android:layout_below="@id/ykxm"
+                                                    android:text="游客年龄段：青年团"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" />
+                                                <TextView
+                                                    android:layout_marginTop="20px"
+                                                    android:id="@+id/cxsj"
+                                                    android:layout_below="@id/yknld"
+                                                    android:text="出行时间：2017/02/12"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" />
+                                                <TextView
+                                                    android:layout_marginTop="45px"
+                                                    android:layout_alignParentRight="true"
+                                                    android:id="@+id/lxmc"
+                                                    android:text="路线名称：云南5日游"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" />
+                                                <TextView
+
+                                                    android:textColor="#f67700"
+                                                    android:layout_marginTop="180px"
+                                                    android:layout_alignParentRight="true"
+                                                    android:text="￥2000/人"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" />
+                                        </com.zhy.autolayout.AutoRelativeLayout>
+                                        <View
+                                            android:id="@+id/flag13"
+                                            android:layout_below="@id/flag11"
+                                            android:background="#eaebed"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="17px"
+                                            />
+                                        <com.zhy.autolayout.AutoRelativeLayout
+                                            android:layout_below="@id/flag13"
+                                            android:id="@+id/flag12"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="100px">
+                                                <ImageView
+                                                    android:id="@+id/flag4"
+                                                    android:layout_marginLeft="32px"
+                                                    android:src="@mipmap/wodeluxian2x"
+                                                    android:layout_centerVertical="true"
+                                                    android:layout_width="35px"
+                                                    android:layout_height="30px" />
+                                                <TextView
+                                                    android:layout_marginLeft="80px"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="100px"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_alignParentStart="true"
+                                                    android:layout_below="@+id/flag13"
+                                                    android:gravity="center_vertical"
+                                                    android:paddingLeft="15px"
+                                                    android:text="路线行程" />
+                                        </com.zhy.autolayout.AutoRelativeLayout>
+                                        <android.support.v7.widget.RecyclerView
+                                            android:layout_below="@id/flag12"
+                                            android:id="@+id/mRoute_details_recyclerview"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+                                </com.zhy.autolayout.AutoRelativeLayout>
+                        </LinearLayout>
+                </com.silent.fiveghost.guide.ui.fragments.order.parallaxheader.HeadZoomScrollView>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

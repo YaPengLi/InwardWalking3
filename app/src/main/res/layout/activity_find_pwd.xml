@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activitys.FindPwdActivity">
+    <RelativeLayout
+        android:background="#34393f"
+        android:layout_width="match_parent"
+        android:layout_height="127px">
+       <include
+           layout="@layout/toolbar"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@id/m_insert_name_icon"
+        android:id="@+id/m_insert_phone_icon"
+        android:layout_marginTop="215px"
+        android:layout_marginLeft="80px"
+        android:src="@mipmap/shoujihao2x"
+        android:layout_width="36px"
+        android:layout_height="36px" />
+
+    <ImageView
+        android:layout_below="@id/m_insert_phone_icon"
+        android:id="@+id/m_insert_yzm_icon"
+        android:layout_marginTop="79px"
+        android:layout_marginLeft="80px"
+        android:src="@mipmap/yanzhenma2x"
+        android:layout_width="36px"
+        android:layout_height="36px" />
+    <ImageView
+        android:layout_below="@id/m_insert_yzm_icon"
+        android:id="@+id/m_insert_pwd_icon"
+        android:layout_marginTop="79px"
+        android:layout_marginLeft="80px"
+        android:src="@mipmap/raccount2x"
+        android:layout_width="36px"
+        android:layout_height="36px" />
+    <EditText
+        android:maxLines="1"
+        android:background="@null"
+        android:layout_marginTop="195px"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/findpwd_user_phones"
+        android:layout_width="375px"
+        android:layout_height="80px"
+        android:layout_alignLeft="@id/findpwd_user_Yzms"
+        android:layout_alignStart="@id/findpwd_user_Yzms"
+        android:hint="@string/insert_phone"
+        android:textSize="13sp" />
+    <View
+        android:id="@+id/mShu"
+        android:layout_marginTop="220px"
+        android:background="#d3d3d3"
+        android:layout_marginLeft="505px"
+        android:layout_width="1px"
+        android:layout_marginRight="30px"
+        android:layout_height="22px"/>
+    <TextView
+        android:id="@+id/findpwd_user_getyzm"
+        android:textSize="11sp"
+        android:layout_toRightOf="@id/mShu"
+        android:layout_marginTop="215px"
+        android:textColor="#facf20"
+        android:text="@string/getyzm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:maxLines="1"
+        android:inputType="number"
+        android:maxLength="4"
+        android:layout_below="@id/findpwd_user_phones"
+        android:id="@+id/findpwd_user_Yzms"
+        android:textSize="13sp"
+        android:background="@null"
+        android:layout_marginLeft="130px"
+        android:hint="@string/insert_yzm"
+        android:layout_marginTop="35px"
+        android:layout_width="530px"
+        android:layout_height="80px" />
+    <EditText
+       android:password="true"
+        android:layout_below="@id/findpwd_user_Yzms"
+        android:id="@+id/findpwd_user_newpwd"
+        android:background="@null"
+        android:textSize="13sp"
+        android:layout_marginLeft="130px"
+        android:hint="@string/insert_newpwd"
+        android:layout_marginTop="35px"
+        android:layout_width="530px"
+        android:layout_height="80px" />
+    <Button
+        android:id="@+id/findpwd_user_submit"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_marginTop="75px"
+        android:layout_below="@id/findpwd_user_newpwd"
+        android:text="@string/submit"
+        android:background="#00c899"
+        android:layout_width="650px"
+        android:layout_height="80px" />
+    <include
+        android:layout_below="@id/findpwd_user_phones"
+        android:layout_marginLeft="130px"
+        layout="@layout/bottom"
+        android:layout_height="1px"
+        android:layout_width="520px" />
+    <include
+        android:layout_below="@id/findpwd_user_Yzms"
+        android:layout_marginLeft="130px"
+        layout="@layout/bottom"
+        android:layout_height="1px"
+        android:layout_width="520px" />
+    <include
+        android:layout_below="@id/findpwd_user_newpwd"
+        android:layout_marginLeft="130px"
+        layout="@layout/bottom"
+        android:layout_height="1px"
+        android:layout_width="520px" />
+</com.zhy.autolayout.AutoRelativeLayout>

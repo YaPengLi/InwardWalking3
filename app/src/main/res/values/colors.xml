@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="login_user">#77C2C2BF</color>
+    <color name="login_btn">#770cc091</color>
+    <color name="regisert_btn">#00c899</color>
+    <color name="check">#00cd98</color>
+    <color name="nocheck">#9a9a9a</color>
+    <color name="view_background">#d1d1d1</color>
+    <color name="toolbar_background">#34393f</color>
+    <color name="fengexian">#d3d3d3</color>
+    <color name="background">#FFFFFF</color>
+    <color name="split_line">#11112233</color>
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+
+    <color name="color1">#F0F0F0</color>
+    <color name="color2">#FFFFFF</color>
+    <color name="color3">#B0B0B0</color>
+    <color name="color4">#666666</color>
+    <color name="color5">#57C5E8</color>
+</resources>

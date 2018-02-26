@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.silent.fiveghost.guide.ui.activitys.HelpCenterActivity">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:background="@color/toolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/toolbar"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <TextView
+            android:layout_marginLeft="30px"
+            android:text="操作指南"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="30px"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/btn_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <include
+        layout="@layout/segmentinglineview"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <TextView
+            android:layout_marginLeft="30px"
+            android:text="平台管理条例"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="30px"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/btn_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <include
+        layout="@layout/segmentinglineview"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <TextView
+            android:layout_marginLeft="30px"
+            android:text="计费规则"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="30px"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/btn_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <include
+        layout="@layout/segmentinglineview"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <TextView
+            android:layout_marginLeft="30px"
+            android:text="平台合作协议"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="30px"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/btn_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <include
+        layout="@layout/segmentinglineview"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <TextView
+            android:layout_marginLeft="30px"
+            android:text="关于我们"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="30px"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/btn_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <include
+        layout="@layout/segmentinglineview"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <TextView
+            android:layout_marginLeft="30px"
+            android:text="联系我们"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="30px"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/btn_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <include
+        layout="@layout/segmentinglineview"/>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activitys.RegisterActivity">
+
+
+      <com.zhy.autolayout.AutoLinearLayout
+          android:background="#34393f"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <include
+              layout="@layout/toolbar"/>
+      </com.zhy.autolayout.AutoLinearLayout>
+
+    <ImageView
+        android:id="@+id/m_insert_name_icon"
+        android:layout_width="36px"
+        android:layout_height="36px"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="252px"
+        android:src="@mipmap/ruser2x" />
+
+    <ImageView
+        android:id="@+id/m_insert_phone_icon"
+        android:layout_width="36px"
+        android:layout_height="36px"
+        android:layout_below="@id/m_insert_name_icon"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="79px"
+        android:src="@mipmap/shoujihao2x" />
+
+    <ImageView
+        android:id="@+id/m_insert_yzm_icon"
+        android:layout_width="36px"
+        android:layout_height="36px"
+        android:layout_below="@id/m_insert_phone_icon"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="79px"
+        android:src="@mipmap/yanzhenma2x" />
+
+    <ImageView
+        android:id="@+id/m_insert_pwd_icon"
+        android:layout_width="36px"
+        android:layout_height="36px"
+        android:layout_below="@id/m_insert_yzm_icon"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="79px"
+        android:src="@mipmap/raccount2x" />
+
+    <ImageView
+        android:layout_width="36px"
+        android:layout_height="36px"
+        android:layout_below="@id/m_insert_pwd_icon"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="79px"
+        android:src="@mipmap/yaoqingma2x" />
+
+    <EditText
+        android:id="@+id/register_mInsert_name"
+        android:layout_width="530px"
+        android:layout_height="80px"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="230px"
+        android:background="@null"
+        android:hint="@string/insert_name"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="22px"
+        android:layout_below="@id/register_mInsert_name"
+        android:layout_marginLeft="455px"
+        android:layout_marginTop="60px"
+        android:background="#d3d3d3" />
+
+    <EditText
+        android:id="@+id/regiser_user_phone"
+        android:layout_width="378px"
+        android:layout_height="80px"
+        android:layout_alignLeft="@id/regiser_user_Yzm"
+        android:layout_alignStart="@id/regiser_user_Yzm"
+        android:layout_below="@id/register_mInsert_name"
+        android:layout_marginTop="35px"
+        android:background="@null"
+        android:hint="@string/insert_phone"
+        android:inputType="number"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/regiser_getYzm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_mInsert_name"
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="55px"
+        android:text="@string/getyzm"
+        android:textColor="#facf20" />
+
+    <EditText
+        android:id="@+id/regiser_user_Yzm"
+        android:layout_width="530px"
+        android:layout_height="80px"
+        android:maxLines="1"
+        android:inputType="number"
+        android:layout_below="@id/regiser_user_phone"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="35px"
+        android:background="@null"
+        android:hint="@string/insert_yzm"
+        android:maxLength="4"
+        android:textSize="13sp" />
+
+    <EditText
+        android:password="true"
+        android:id="@+id/regisertuser_pwd"
+        android:layout_width="530px"
+        android:layout_height="80px"
+        android:layout_below="@id/regiser_user_Yzm"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="35px"
+        android:background="@null"
+        android:hint="@string/insert_pwd"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/regiser_mYqm"
+        android:layout_width="530px"
+        android:layout_height="80px"
+        android:layout_below="@id/regisertuser_pwd"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="35px"
+        android:background="@null"
+        android:hint="@string/insert_yqm"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/mLinear_xieyi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regiser_mYqm"
+        android:layout_marginTop="35px"
+        android:gravity="center">
+
+        <CheckBox
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/mRegister_xieyi"
+            android:background="@drawable/regisert_xieyi"
+            android:button="@null"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/mRegister_xieyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xieyi" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/bottom"
+        android:layout_width="520px"
+        android:layout_height="1px"
+        android:layout_below="@id/register_mInsert_name"
+        android:layout_marginLeft="130px" />
+
+    <include
+        layout="@layout/bottom"
+        android:layout_width="520px"
+        android:layout_height="1px"
+        android:layout_below="@id/regiser_user_phone"
+        android:layout_marginLeft="130px" />
+
+    <include
+        layout="@layout/bottom"
+        android:layout_width="520px"
+        android:layout_height="1px"
+        android:layout_below="@id/regiser_user_Yzm"
+        android:layout_marginLeft="130px" />
+
+    <include
+        layout="@layout/bottom"
+        android:layout_width="520px"
+        android:layout_height="1px"
+        android:layout_below="@id/regisertuser_pwd"
+        android:layout_marginLeft="130px" />
+
+    <include
+        layout="@layout/bottom"
+        android:layout_width="520px"
+        android:layout_height="1px"
+        android:layout_below="@id/regiser_mYqm"
+        android:layout_marginLeft="130px" />
+
+    <Button
+        android:id="@+id/mRegister_btn"
+        android:layout_width="650px"
+        android:layout_height="80px"
+        android:layout_below="@id/mLinear_xieyi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35px"
+        android:background="@color/login_btn"
+        android:text="@string/ljcz"
+        android:textColor="#fff" />
+</com.zhy.autolayout.AutoRelativeLayout>

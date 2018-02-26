@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@mipmap/testc"
+            android:layout_width="match_parent"
+            android:layout_height="346px" />
+        <com.zhy.autolayout.AutoLinearLayout
+            android:background="@drawable/relative_shape_four"
+            android:layout_marginTop="330px"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="订单编号：201704052365"
+                    android:layout_marginTop="35px"
+                    android:layout_marginLeft="32px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginRight="32px"
+                    android:layout_marginTop="35px"
+                    android:layout_alignParentRight="true"
+                    android:text="路线名称：云南五日游"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <TextView
+                android:layout_marginTop="25px"
+                android:text="出行时间：2017/02/12"
+                android:layout_marginLeft="32px"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#f58725"
+                    android:id="@+id/mActivity_release_route_price"
+                    android:text="￥2000"
+                    android:layout_marginLeft="32px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="起/人(成人)"
+                    android:layout_toRightOf="@id/mActivity_release_route_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#f58725"
+                    android:id="@+id/mActivity_release_route_pricetwo"
+                    android:text="￥2000"
+                    android:layout_marginLeft="32px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="起/人(成人)"
+                    android:layout_toRightOf="@id/mActivity_release_route_pricetwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <View
+                android:background="#eaebed"
+                android:layout_marginTop="25px"
+                android:layout_width="match_parent"
+                android:layout_height="18px"/>
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+                <ImageView
+                    android:src="@mipmap/wodeluxian2x"
+                    android:layout_marginLeft="32px"
+                    android:layout_width="32px"
+                    android:layout_height="32px" />
+                <TextView
+                    android:layout_marginLeft="80px"
+                    android:text="路线行程"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
